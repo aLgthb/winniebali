@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.background-music {
+  background-color: #8faf1b;
+  width: 9vw;
+  height: 5vh;
+  border-radius: 20px;
+  border: #34383a 2px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+}
+
+.background-music:hover {
+  background-color: #333905;
+  transition: 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background-image: url(kontingensooko.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8),
+    /* Cahaya utama */ 0 0 16px rgb(255, 255, 255); /* Cahaya tambahan */
+}
+
+.hero-text h1 span {
+  color: #ffaa00;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8),
+  /* Cahaya utama */ 0 0 16px rgb(255, 255, 255); /* Cahaya tambahan */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.explore-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #b87a00;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #462f02;
+  transform: scale(1.1);
+}
+
+/* Story Section */
+.story-section {
+  padding: 50px 20px;
+  background-color: #cecece;
+  text-align: center;
+}
+
+.story-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.story-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1070px) {
+  .background-music {
+    width: 13vw;
+  }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background: url('kontingensooko.jpg') no-repeat center center/cover;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .background-music {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 15vw;
+    }
+}
+
+@media (max-width: 500px) {
+  .background-music {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 280px) {
+  .background-music {
+    width: 40vw;
+  }
+}

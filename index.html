@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WinniEverything</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="hero-text">
+        
+
+        <h1>I'am Watching On You <span>My Queen</span> </h1>
+        <p>
+          Karena setiap kata punya cerita, dan setiap rasa layak untuk
+          diceritakan. ( pt 2 )
+        </p>
+        <a href="#story" class="explore-button">Lanjutkan Membaca</a>
+        <audio id="background-music" loop>
+          <source src="melting.mp3" type="audio/mp3" />
+        </audio>
+
+        <!-- Tombol untuk memulai musik -->
+        <button class="background-music" onclick="playMusic()">
+          🎵 Play Music
+        </button>
+        <script>
+          function playMusic() {
+            var music = document.getElementById("background-music");
+            music.play();
+          }
+        </script>
+      </div>
+    </div>
+
+    <section id="story" class="story-section">
+      <div class="container">
+        <h2>Selamat Berlibur</h2>
+        <p>
+         Haiii!. Selamat berlibur ya Nonaku yang cantik dan maniss.. jaga kesehatan yaaa disanaa, dirinya dijaga baik-baik,
+         jangan sampe hilang disanaa nanti saya nyariin lohh haha, jaga juga barang-barang Winni jangan sampai tertinggal dimanapun..
+         Jangan lupa kirim foto yang buanyak ya karena setiap detikmu berharga mahal buat diriku ( asekk wkwkw ),
+         alangkah baiknya juga bring for me pie susu yaa wehh:v ( becandaa ) ,
+         sholatnya jangan lupa it's the most important thing,
+         kalau ada apa-apa bilangnya ke sayaa kalo berdoanya ke Allah saja hahaa😅. Makasih sudah menyempatkan membaca>.<
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Ucapan Selamat | Dibuat dengan hati.</p>
+    </footer>
+  </body>
+</html>
